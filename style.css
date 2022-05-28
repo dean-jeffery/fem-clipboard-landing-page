@@ -122,7 +122,6 @@ button{
     padding: 10px 30px;
     border-radius: 25px;
     color: white;
-    border: none;
     font-size: 18px;
     margin: 0 10px;
     cursor: pointer;
@@ -130,6 +129,7 @@ button{
 
 button.mac{
     background-color: hsl(233, 100%, 69%);
+    border: hsl(233, 100%, 69%);
 }
 
 button.mac:hover{
@@ -140,6 +140,7 @@ button.mac:hover{
 
 button.ios{
     background-color: hsl(171, 66%, 44%);
+    border: hsl(171, 66%, 44%);
 }
 
 button.ios:hover{
