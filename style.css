@@ -134,7 +134,7 @@ button.mac{
 
 button.mac:hover{
     color: hsl(233, 100%, 69%);
-    border-color: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 69%);
     background-color: white;
 }
 
@@ -144,7 +144,7 @@ button.ios{
 
 button.ios:hover{
     color: hsl(171, 66%, 44%);
-    border-color: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 44%);
     background-color: white;
 }
 
