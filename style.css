@@ -132,8 +132,20 @@ button.mac{
     background-color: hsl(233, 100%, 69%);
 }
 
+button.mac:hover{
+    color: hsl(233, 100%, 69%);
+    border-color: hsl(233, 100%, 69%);
+    background-color: white;
+}
+
 button.ios{
     background-color: hsl(171, 66%, 44%);
+}
+
+button.ios:hover{
+    color: hsl(171, 66%, 44%);
+    border-color: hsl(171, 66%, 44%);
+    background-color: white;
 }
 
 
