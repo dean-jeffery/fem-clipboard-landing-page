@@ -1,0 +1,332 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Typography
+	2.  Body
+	3. 	Header
+	4.  Layout
+	5.  Footer
+	6.  Media Queries
+
+>>> Colors
+
+### Primary
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+### Neutral
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	1. Typography
+/* -------------------------------------------------------------------------- */
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 30px;
+    color: hsl(210, 10%, 33%);
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin-top: 100px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+p{
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	2. Body
+/* -------------------------------------------------------------------------- */
+
+button{
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+button.mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+button.ios{
+    background-color: hsl(171, 66%, 44%);
+}
+
+
+/* Text width wrapper */
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	3. Header
+/* -------------------------------------------------------------------------- */
+
+header{
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* height: */ /* 363px; exact height of image provided */
+}
+
+.logo{
+    padding-top: 100px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	4. Layout
+/* -------------------------------------------------------------------------- */
+
+.col-2{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+    text-align: left;
+}
+.col-2 .left img{
+    width: 100%;
+}
+
+.right{
+    width: 25%;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.col-3{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 25px auto 0 auto;
+}
+
+.third{
+    width: 30%;
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+
+.third img{
+    max-height: 32px;
+}
+
+.col-5{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	5. Footer
+/* -------------------------------------------------------------------------- */
+
+.attribution{
+    font-size: 11px; 
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #f5f6f8;
+}
+
+.footer-logo{
+    max-width: 75px;
+    max-height: 75px;
+    margin: 50px 0;
+}
+
+footer .col-3{
+    align-items: center;
+}
+
+footer .col-3 p{
+    margin: 0;
+}
+
+footer .col-3 p:nth-child(even){
+    margin: 0 35px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+}
+
+.socials li{
+    display: inline-flex;
+}
+
+.socials li:nth-child(2){
+    margin: 0 25px;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*	6. Media Queries
+/* -------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 1000px){
+    .col-5{
+        width: 90%;
+    }
+    .wrapper{
+        width: 75%;
+    }
+    footer .col-3{
+        flex-direction: column;
+    }
+    .footer-logo{
+        margin: 25px 0;
+    }
+    .socials{
+        margin: 25px 0;
+    }
+    .links{
+        flex-direction: column;
+    }
+    footer .col-3 p:nth-child(even){
+        margin: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .col-5{
+        flex-direction: column;
+        width: 25%;
+    }
+    .col-5 img:nth-child(even){
+        margin: 50px 0;
+    }
+    .multi-browse{
+        max-width: 100%;
+    }
+    .col-3{
+        flex-direction: column;
+    }
+    .third{
+        width: 100%;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    button{
+        display: block;
+        margin: 25px auto;
+        width: 90%;
+    }
+    .col-2{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+    .left img{
+        margin-bottom: 25px;
+    }
+}
